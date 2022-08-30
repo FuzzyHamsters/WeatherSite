@@ -1,0 +1,250 @@
+.nav-custom {
+    padding: 20px;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+    background-image: linear-gradient(to right, #3a68bd 0%, #25025b 100%);
+    color: white;
+}
+
+.divider {
+    margin-top: 20px;
+    width: 100%;
+    border-bottom: 2px solid #3a68bd;
+}
+
+input {
+    margin-top: 5px;
+    padding-left: 10px;
+    width: 100%;
+    height: 60px;
+    border-radius: 5px;
+    border-color: #808080;
+    border-width: 1px;
+    font-size: 24px;
+    color: #808080;
+}
+
+.submitButton {
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: #efe898;
+    border-width: 0;
+    font-size: 24px;
+    color: white;
+    width: 100%;
+    height: 45px;
+    cursor: pointer;
+}
+
+.historyButton {
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: #b7b7b7;
+    border-width: 0;
+    font-size: 24px;
+    color: white;
+    width: 100%;
+    height: 45px;
+    cursor: pointer;
+}
+
+button:hover:disabled {
+    cursor: not-allowed;
+}
+
+.ripple {
+    background-position: center;
+    transition: background 0.8s;
+}
+
+.ripple:hover {
+    background: #47a7f5 radial-gradient(circle, transparent 1%, #47a7f5 1%)
+        center/15000%
+}
+
+.ripple:active {
+    background-color: #6eb9f7;
+    background-size: 100%;
+    transition: background 0s;
+}
+
+main {
+    display: flex;
+}
+  
+.mainSameRow {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+  
+.unitLabel {
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+}
+  
+.gaps {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+  
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+  
+.slider.round:before {
+    border-radius: 50%;
+}
+  
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+  
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+  
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(162, 224, 141);
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+  
+input:checked + .slider {
+    background-color: #2196f3;
+}
+  
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196f3;
+}
+  
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.sameRow {
+    display: flex;
+    align-items: center;
+}
+  
+.cityTitle {
+    font-size: 32px;
+    font-weight: 700;
+    font-family: Arial, sans-serif;
+    padding-left: 5px;
+}
+  
+.weatherText {
+    margin-top: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-family: Arial, sans-serif;
+}
+  
+.uvGreen {
+    background-color: darkgreen;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 2px;
+    color: #ffffff;
+}
+  
+.uvYellow {
+    background-color: yellow;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 2px;
+    color: #2e2d2d;
+}
+  
+.uvOrange {
+    background-color: orange;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 2px;
+    color: #ffffff;
+}
+  
+.uvRed {
+    background-color: red;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 2px;
+    color: #ffffff;
+}
+
+.current-panel {
+    width: 100%;
+    height: 235px;
+    padding-left: 10px;
+    padding-top: 20px;
+    border: 1px solid #808080;
+}
+
+.future-panel {
+  margin-top: 20px;
+}
+
+.futureTitle {
+  font-size: 24px;
+  font-weight: 600;
+  font-family: Arial, sans-serif;
+}
+
+.futureCards {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  width: 16%;
+  height: 250px;
+  background-color: #33475a;
+}
+
+.futureWeatherTextTitle {
+  margin-top: 15px;
+  padding-left: 10px;
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.futureWeatherText {
+  margin-top: 15px;
+  padding-left: 10px;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.weatherIcon {
+  background-image: linear-gradient(0deg, #33475a, #808080 50%, #33475a);
+}
